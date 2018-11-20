@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/holder_container"
+    >
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+
+        >
+        <LinearLayout
+            android:layout_weight=".99"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_Note"
+            android:hint="Nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:text="Fecha"
+                android:id="@+id/tv_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgbtn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="screen"
+            android:src="@android:drawable/ic_menu_delete"
+            />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
